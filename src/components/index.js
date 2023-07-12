@@ -1,16 +1,16 @@
-/**
- * Created by extra_zhao on 2019/12/30.
- */
-/**
- * Created by Admin on 2018/8/31.
- */
 import Vue from 'vue';
 import vheader from './header';
-import vmenu from './menu'
+import vmenu from './menu';
+import vMessageBoard from './message-board';
+import vleavemessage from './leave-message';
+import vMessageList from './message-list';
 
 const publicComponents = {
     'v-header': vheader,
-    'v-menu': vmenu
+    'v-menu': vmenu,
+    'v-message-board': vMessageBoard,
+    'v-leave-message': vleavemessage,
+    'v-message-list': vMessageList
 }
 
 

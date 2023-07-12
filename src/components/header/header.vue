@@ -7,7 +7,7 @@
         
         <div class="right">
             <div class="search">
-                <el-input class="search-input" size="medium" placeholder="请输入内容" prefix-icon="el-icon-search" v-model="searchValue"></el-input>
+                <el-input class="search-input" maxlength="10" size="medium" placeholder="请输入内容" prefix-icon="el-icon-search" v-model="searchValue"></el-input>
             </div>
             <div class="user-info">
                 <i class="el-icon-message-solid logo-icon"></i>
@@ -76,7 +76,7 @@
         align-items: center;
         .search{
             .search-input{
-                width: 360px;
+                width: 400px;
                 border-radius: 24px;
                 background-color: #f6fafd;
                 /deep/ input.el-input__inner{

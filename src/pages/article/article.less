@@ -1,0 +1,50 @@
+.article-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .article-list{
+        padding: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        &.detail-small {
+            width: 400px;
+            padding: 10px;
+            flex-shrink: 0;
+            .article-list-item{
+                width: 100%;
+                padding: 8px;
+                .wrapper-content{
+                    .introduce{
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        &.animate-article-list{
+            .scaleWidth();
+        }
+    }
+    .articel-detail-container{
+        flex-grow: 1;
+        height: 100%;
+        padding: 18px;
+    }
+}
+
+
+@keyframes scaleWidth {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 400px;
+    }
+}
+
+.scaleWidth(){
+  animation: scaleWidth 1.1s ease-in-out;
+  animation-fill-mode: forwards;
+}

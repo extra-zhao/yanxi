@@ -1,6 +1,74 @@
-.test{
-  font-size: 40px;
-  .test-flexible{
-    font-size: 20px;
-  }
+.index-page-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .banner-img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        opacity: 0.12;
+    }
+    .guide{
+        color: #fff;
+        font-weight: bold;
+        width: 75%;
+        padding-left: 15%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        clear: both;
+        .name{
+            font-size: 32px;
+        }
+        .welcome{
+            font-size: 20px;
+            margin-top: 32px;
+        }
+        .introduce-container{
+            .introduce-item{
+                margin-top: 24px;
+                .item-title{
+                    margin-bottom: 8px;
+                    font-size: 18px;
+                }
+                .item-text{
+                    line-height: 24px;
+                    ul{
+                        display: flex;
+                        padding-left: 24px;
+                        li{
+                            margin-right: 24px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .actions{
+            margin-top: 48px;
+            .btn{
+                width: 160px;
+                background-color: #0169d9;
+                border-color: #0169d9;
+                font-weight: bold;
+                letter-spacing: 4px;
+                font-size: 14px;
+                &:nth-of-type(1) {
+                    margin-right: 140px;
+                }
+            }
+        }
+    }
 }

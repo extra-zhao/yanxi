@@ -1,20 +1,39 @@
 <template>
-    <div id="app">
+    <div id="app" @click="palyAudio">
+
+        <!-- <audio controls autoplay loop ref='audio' id="audio">
+            <source  type="audio/ogg">
+            <source src="./assets/music/huahai.mp3" type="audio/mpeg">
+        </audio> -->
+
+
         <div id="wrapper_content">
             <v-header />
             <div id="wrapper_body">
                 <v-menu />
-                <router-view />
+                <div class="view-container">
+                    <router-view />
+                </div>
             </div>
             
         </div>
         
+
+       
     </div>
 </template>
 
 <script>
 export default {
     name: "App",
+    mounted() {
+
+    },
+    methods: {
+        palyAudio() {
+            //  this.$refs.audio.play();
+        }
+    }
 };
 </script>
 
@@ -33,6 +52,9 @@ export default {
     height: 100vh;
     background-color: #e6e9ee;
     padding: 48px;
+    #audio{
+        display: none;
+    }
     #wrapper_content{
         background-color: #fff;
         border-radius: 24px;
@@ -43,6 +65,12 @@ export default {
         #wrapper_body{
             flex-grow: 1;
             background-color: #eef1f6;
+            overflow: hidden;
+            display: flex;
+            .view-container{
+                flex-grow: 1;
+                height: 100%;
+            }
         }
     }
 }
