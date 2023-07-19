@@ -1,0 +1,88 @@
+.diary-container{
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    position: relative;
+    #diary_turn_container{
+        // background: url(~@/assets/diary/diary-bg.png) no-repeat;
+        // background-size: contain;
+    }
+    .diary-turn-item{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow: hidden;
+        background: url(https://gd-hbimg.huaban.com/18e6cbc87daeda8f5e979dadf05163ba4e0138941c35-Cv3isZ) no-repeat;
+        background-size: contain;
+       
+    }
+    .diary-left, .diary-rigth{
+        flex: 1;
+        padding: 64px;
+        background-color: #fff;
+        font-size: 16px;
+        color: #333;
+        height: 100%;
+        overflow-y: auto;
+        
+    }
+    .diary-left{
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+        flex: 1;
+        border-right: 1px dotted #ccc;
+        .diary-info{
+            font-size: 18px;
+            display: flex;
+            margin-bottom: 32px;
+            align-items: center;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .title{
+                color: #999;
+                width: 100px;
+                text-align: right;
+                // font-weight: bold;
+                margin-right: 24px;
+            }
+            .desc{
+                color: #333;
+                font-weight: bold;
+            }
+        }
+    }
+    .diary-rigth{
+        flex: 3;
+        font-size: 18px;
+        .p{
+            text-decoration: underline;
+            text-underline-offset: 3px; 
+            &.rate{
+                margin: 32px 0 24px 0;
+            }
+            &.red{
+                font-weight: bold;
+                margin-top: 32px;
+                // margin: 32px 0 24px 0;
+            }
+            &.red-list{
+                margin-top: 4px;
+                font-weight: bold;
+                color: red;
+            }
+            &.black{
+                font-weight: bold;
+                margin-top: 24px;
+            }
+            &.black-list{
+                font-weight: bold;
+                color: #000;
+            }
+        }
+        .diary-img{
+            max-width: 100%;
+            margin: 24px 0;
+        }
+    }
+}

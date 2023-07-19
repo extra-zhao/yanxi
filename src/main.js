@@ -13,6 +13,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
+import 'swiper/swiper-bundle.min.css';
+// import 'swiper/swiper-bundle.js';
+
+
 // 代码高亮插件
 import hljs from 'highlight.js';
 // 必须导入 否则没样式

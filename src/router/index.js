@@ -55,7 +55,7 @@ const router =  new Router({
         {
             path: '/dynamic',
             name: 'dynamic',
-            component: resolve => require(['pages/not-found'], resolve),
+            component: resolve => require(['pages/dynamic'], resolve),
             meta: {
                 title: '个人动态',
                 show: true,
@@ -63,9 +63,9 @@ const router =  new Router({
             }
         },
         {
-            path: '/dairy',
-            name: 'dairy',
-            component: resolve => require(['pages/not-found'], resolve),
+            path: '/diary',
+            name: 'diary',
+            component: resolve => require(['pages/diary'], resolve),
             meta: {
                 title: '上分日记',
                 show: true,
